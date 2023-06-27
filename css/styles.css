@@ -434,25 +434,45 @@ img.client-logo {
 /* Section: Support */
 
 #support {
-    height: 600px;
     display: flex;
     align-items: center;
 }
 
 #support .container-row {
     column-gap: 2em;
+    padding: 10em 0 2em;
 }
 
 .chat {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.25em;
     padding: 0 4em;
+    overflow: hidden;
+    max-height: 345px;
 }
 
 .message-box {
-    display: flex;
-    column-gap: 0.75em;
+    display: grid;
+    justify-items: end;
+    grid-template-columns: 50px auto;
+    grid-column-gap: 1em;
+    grid-row-gap: 0.5em;
+    grid-template-areas:
+        "img message"
+        "img job";
+}
+
+
+#chatClient.message-box {
+    grid-template-columns: auto 50px;
+    grid-template-areas: 
+        "message img"
+        "job img"!important;
 }
 
 .avatar {
+    grid-area: img;
     width: 50px;
     height: 50px;
     border-radius: 50px;
@@ -463,6 +483,7 @@ img.client-logo {
 }
 
 .message {
+    grid-area: message;
     background-color: var(--background-light);
     padding: .75em 1em;
     margin: 0;
@@ -473,12 +494,20 @@ img.client-logo {
     -o-border-radius: var(--border-radius);
 }
 
+.job {
+    grid-area: job;
+    color: var(--color-text-secondary);
+    font-size: .6rem;
+    font-weight: 400;
+}
+
 /* Section: Price */
 
 #price .container-row {
     display: flex;
     flex-direction: column;
     row-gap: 5em;
+    padding: 8em 0;
 }
 
 #price .row {
