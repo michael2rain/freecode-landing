@@ -307,15 +307,6 @@ img.client-logo {
     max-width: 200px;
 }
 
-/* Logos: Tablet */
-
-@media (min-width: 768px) and (max-width: 992px) {
-    #clients .row {
-        padding: 0 3em;
-        max-width: 100%;
-    }
-}
-
 /* Section: Video */
 
 #features {
@@ -337,7 +328,7 @@ img.client-logo {
     align-items: center;
     flex-direction: column;
     row-gap: 5em;
-    padding: 6em 2em 2em;
+    padding: 8em 2em 2em;
 }
 
 #features .container-row:before {
@@ -526,7 +517,7 @@ img.client-logo {
 
 #price .row.prices {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     column-gap: 3em;
 }
@@ -575,6 +566,7 @@ img.client-logo {
 }
 
 #price .features {
+    contain: content;
     margin: 0;
     padding-left: 0;
     list-style: none;
