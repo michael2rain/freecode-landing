@@ -18,11 +18,12 @@
     --font-base: 'Lexend', sans-serif;
     --size-text-base: 16px;
     --size-text-heading: 32px;
-    --line-height-base: 1.5em;
+    --line-height-base: 1.7;
     /*Border*/
+    --border-radius: 7px;
     --border-size: 1px;
     --border-color: #e2e2e2;
-    --border-radius: 7px;
+    --border-color-divider: hsl(0deg 0% 88.63% / 16%);
     /*Buttons*/
     --btn-background: rgb(230 207 0);
     --btn-font-color: hsl(54deg 100% 7%);
@@ -116,7 +117,11 @@ code {
     color: var(--color-base);
 }
 
-/* Page General Styles*/
+
+/*
+ * Settings:
+ * Global styles
+*/
 
 .container {
     max-width: 100%;
@@ -199,7 +204,11 @@ code {
     background-color: hsl(54deg 100% 10%);
 }
 
-/* Header and Nav */
+
+/*
+ * Header:
+ * Logo and menu
+*/
 
 #header {
     z-index: 2;
@@ -247,7 +256,10 @@ img.elogo {
 }
 
 
-/* Section: Hero Primary */
+/*
+ * Section:
+ * Hero primary
+*/
 
 #hero {
     height: 1110px;
@@ -261,7 +273,7 @@ img.elogo {
 }
 
 #hero .container-grid {
-    padding: 15em 0 10em;
+    padding: 15em 2em 10em;
     row-gap: 5em;
     align-items: center;
 }
@@ -316,7 +328,11 @@ img.client-logo {
     max-width: 200px;
 }
 
-/* Section: Video */
+
+/*
+ * Section:
+ * Video and best features
+*/
 
 #features {
     contain: content;
@@ -425,7 +441,11 @@ img.client-logo {
     -o-border-radius: 0 0 15px 15px;
 }
 
-/* Section: Support */
+
+/*
+ * Section:
+ * Support and chat example
+*/
 
 #support {
     display: flex;
@@ -434,7 +454,7 @@ img.client-logo {
 
 #support .container-row {
     column-gap: 2em;
-    padding: 10em 0 0;
+    padding: 10em 0 0 2em;
 }
 
 .chat {
@@ -443,7 +463,7 @@ img.client-logo {
     row-gap: 1.25em;
     padding: 0 4em;
     overflow: hidden;
-    max-height: 345px;
+    max-height: 350px;
 }
 
 .message-box {
@@ -495,7 +515,11 @@ img.client-logo {
     font-weight: 400;
 }
 
-/* Section: Price */
+
+/*
+ * Section:
+ * Pricing of product
+*/
 
 #price .container-row {
     flex-direction: column;
@@ -555,13 +579,20 @@ img.client-logo {
 
 .cost > span {
     line-height: 0;
+    font-size: 1rem;
+}
+
+.features {
+    list-style: none;
 }
 
 .features li {
-    border-top: 1px solid #e2e2e229;
+    border-top: 1px solid var(--border-color-divider);
     padding: 15px 0;
     padding-left: 25px;
 }
+
+/* Features list: Include */
 
 .features li:before {
     content: '';
@@ -576,6 +607,28 @@ img.client-logo {
     -ms-transform: translate(-23px, 5px);
     -o-transform: translate(-23px, 5px);
     background-image: url("data:image/svg+xml,%3Csvg width='14' height='12' viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.5 11.075L0 6.575L1.575 5L4.5 7.925L11.925 0.5L13.5 2.075L4.5 11.075Z' fill='%2300B507'/%3E%3C/svg%3E%0A");
+}
+
+/* Features list: No Include */
+
+.features li.NonInclude:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    transform: translate(-23px, 5px);
+    -webkit-transform: translate(-23px, 5px);
+    -moz-transform: translate(-23px, 5px);
+    -ms-transform: translate(-23px, 5px);
+    -o-transform: translate(-23px, 5px);
+    background-image: url("data:image/svg+xml,%3Csvg width='15' height='21' viewBox='0 0 15 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.25 5.23375L12.0163 4L7.125 8.89125L2.23375 4L1 5.23375L5.89125 10.125L1 15.0163L2.23375 16.25L7.125 11.3588L12.0163 16.25L13.25 15.0163L8.35875 10.125L13.25 5.23375Z' fill='%23F90000'/%3E%3C/svg%3E%0A");
+}
+
+.features li.NonInclude {
+    padding-left: 25px;
+    color: var(--color-text-secondary);
 }
 
 #recommended {
@@ -600,84 +653,61 @@ img.client-logo {
 }
 
 
+/*
+ * Section:
+ * Frequently asked questions
+*/
 
-/* Old Styles */
-
-#price .cost>span {
-    font-size: 1rem;
-    margin-left: -5px;
-}
-
-#price .features {
-    contain: content;
-    margin: 0;
-    padding-left: 0;
-    list-style: none;
+#faq .container-row {
     display: flex;
     flex-direction: column;
+    row-gap: 5em;
+    padding: 6em 2em 6em;
 }
 
-#price .feature-plus {
-    color: var(--color-base);
+#faq .title-container {
+    width: 50%;
 }
 
-/* Check to inlcude */
+.column-grid {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-row-gap: 4em;
+    grid-template-areas:
+        "title questions"
+        "title questions";
+}
 
+.faq-container {
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 1em;
+    grid-column-gap: 4em;
+}
 
+/* FAQ: Item */
 
-/* Check to non-inlcude */
-#price li.NonInclude {
-    padding-left: 25px;
+.category-faq {
+    margin: 0;
+    padding-top: .75em;
+}
+
+.faq-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.acordion-content {
+    display: none;
+}
+
+.acordion-trigger {
+    width: 100%;
     color: var(--color-text-secondary);
-}
-
-#price li.NonInclude:before {
-    content: '';
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    background-size: cover;
-    background-position: center;
-    transform: translate(-23px, 5px);
-    -webkit-transform: translate(-23px, 5px);
-    -moz-transform: translate(-23px, 5px);
-    -ms-transform: translate(-23px, 5px);
-    -o-transform: translate(-23px, 5px);
-    background-image: url("data:image/svg+xml,%3Csvg width='15' height='21' viewBox='0 0 15 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.25 5.23375L12.0163 4L7.125 8.89125L2.23375 4L1 5.23375L5.89125 10.125L1 15.0163L2.23375 16.25L7.125 11.3588L12.0163 16.25L13.25 15.0163L8.35875 10.125L13.25 5.23375Z' fill='%23F90000'/%3E%3C/svg%3E%0A");
-}
-
-/* Section: Body End */
-
-#bodyEnd .row {
-    height: 250px;
-    padding: 0 5em;
-    display: flex;
-    flex-direction: column;
-    row-gap: 2em;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-#bodyEnd p {
-    margin: 0;
-}
-
-#bodyEnd .row a {
-    color: var(--color-text);
-}
-
-#bodyEnd .row a:hover {
-    color: var(--color-base);
-}
-
-#bodyEnd .light-logo {
-    width: 200px;
-}
-
-#bodyEnd .row ul {
-    display: flex;
-    column-gap: 2em;
-    list-style: none;
-    text-decoration: underline;
+    line-height: 1.5em;
+    text-decoration: none;
+    border-bottom: 1px solid var(--border-color-divider);
+    padding: 1.5em 0;
 }
