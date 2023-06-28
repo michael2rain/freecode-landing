@@ -28,7 +28,7 @@
             </nav>
         </div>
     </header>
-    <div class="container">
+    <main class="container">
         <section id="hero">
             <div class="container-grid">
                 <div class="col">
@@ -233,17 +233,15 @@
                     <h2><span class="feature-text">Lorem ipsum</span> dolor sit amet consectetur. Sed eget praesent mi
                         sem sed.</h2>
                 </div>
-                <div class="row prices">
+                <ul class="row">
                     <!-- Basic plan -->
-                    <div class="card">
-                        <div class="heading-card">
-                            <h3>Basic</h3>
-                        </div>
+                    <li class="card">
                         <div class="container-card">
-                            <p class="cost">
-                                $49.00
-                                <span>USD</span>
-                            </p>
+                            <div class="description">
+                                <h3 class="plan">Starter</h3>
+                                <h4 class="cost">Free</h4>
+                                <p>Best for learning how to use eCompany plugin</p>
+                            </div>
                             <ul class="features">
                                 <li class="include">One-click cloning</li>
                                 <li class="include">SSH and WP-CLI</li>
@@ -251,51 +249,55 @@
                                 <li class="NonInclude">IP Geolocation blocking</li>
                                 <li class="NonInclude">Bedrock and Trellis</li>
                             </ul>
-                            <button class="btn btn-secondary">Select this plan</button>
                         </div>
-                    </div>
+                        <div class="footer-card">
+                            <a class="btn btn-secondary" href="#" title="Start for free">Star for free</a>
+                        </div>
+                    </li>
                     <!-- Recomended plan -->
-                    <div class="card">
-                        <div class="heading-card selected">
-                            <span class="feature-plus">Recomended</span>
-                            <h3>Entrepreneur</h3>
-                        </div>
+                    <li id="recommended" class="card">
                         <div class="container-card">
-                            <p class="cost">
-                                $199.00
-                                <span>USD</span>
-                            </p>
-                            <ul class="features">
-                                <li class="include">One-click cloning</li>
-                                <li class="include">SSH and WP-CLI</li>
-                                <li class="include">PHP version switching</li>
-                                <li class="include">IP Geolocation blocking</li>
-                                <li class="NonInclude">Bedrock and Trellis</li>
-                            </ul>
-                            <button class="btn btn-primary">Select this plan</button>
-                        </div>
-                    </div>
-                    <!-- Enterprise plan -->
-                    <div class="card">
-                        <div class="heading-card">
-                            <h3>Enterprise</h3>
-                        </div>
-                        <div class="container-card">
-                            <p class="cost">
-                                $299.00
-                                <span>USD</span>
-                            </p>
+                            <div class="description">
+                                <h3 class="plan">Entrepreneur</h3>
+                                <h4 class="cost">$99<span> /mo</span></h4>
+                                <p>Best for creators and freelance developers</p>
+                            </div>
                             <ul class="features">
                                 <li class="include">One-click cloning</li>
                                 <li class="include">SSH and WP-CLI</li>
                                 <li class="include">PHP version switching</li>
                                 <li class="include">IP Geolocation blocking</li>
                                 <li class="include">Bedrock and Trellis</li>
+                                <li class="include">Best Support</li>
                             </ul>
-                            <button class="btn btn-secondary">Select this plan</button>
                         </div>
-                    </div>
-                </div>
+                        <div class="footer-card">
+                            <a class="btn btn-primary" href="#" title="Select this plan">Select this plan</a>
+                        </div>
+                    </li>
+                    <!-- Enterprise plan -->
+                    <li class="card">
+                        <div class="container-card">
+                            <div class="description">
+                                <h3 class="plan">Enterprise</h3>
+                                <h4 class="cost">$199<span> /mo</span></h4>
+                                <p>Best for creators and freelance developers</p>
+                            </div>
+                            <ul class="features">
+                                <li class="include">One-click cloning</li>
+                                <li class="include">SSH and WP-CLI</li>
+                                <li class="include">PHP version switching</li>
+                                <li class="include">IP Geolocation blocking</li>
+                                <li class="include">Bedrock and Trellis</li>
+                                <li class="include">Support Preferency</li>
+                                <li class="include">Uptime SLAs</li>
+                            </ul>
+                        </div>
+                        <div class="footer-card">
+                            <a class="btn btn-secondary" href="#" title="Select this plan">Select this plan</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
         <section id="bodyEnd" class="container-row">
@@ -315,7 +317,7 @@
                 </ul>
             </div>
         </section>
-    </div>
+    </main>
     <footer>
         <p>Un sitio web desarrollado para conseguir la certificación en "Diseño Web Responsivo" <br>otorgada por <a
                 href="http://freecodecamp.org/" target="_blank"
