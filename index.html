@@ -19,13 +19,14 @@
                     <img class="elogo" src="/logo.svg" alt="Logo Company">
                 </a>
             </div>
-            <nav>
-                <ul id="Menu">
+            <nav class="nav-container">
+                <ul class="nav-links">
                     <li><a title="Pricing" href="#features">Features</a></li>
                     <li><a title="Support" href="#support">Support</a></li>
                     <li><a title="Information" href="#price">Pricing</a></li>
                     <li><a title="FAQ" href="#faq">FAQ</a></li>
                 </ul>
+                <a class="btn nav-button" href="#">Contact sales</a>
             </nav>
         </div>
     </header>
@@ -45,12 +46,12 @@
                 <div class="col">
                     <h2>Trusted by companies you trust...</h2>
                     <div class="grid-img">
-                        <img class="client-logo" src="/img/logos/Group 7.png" alt="WordPress">
-                        <img class="client-logo" src="/img/logos/Group 8.png" alt="Automattic">
-                        <img class="client-logo" src="/img/logos/Group 9.png" alt="SendGrid">
-                        <img class="client-logo" src="/img/logos/Group 10.png" alt="Cloudflare">
-                        <img class="client-logo" src="/img/logos/Group 11.png" alt="Woocommerce">
-                        <img class="client-logo" src="/img/logos/Group 12.png" alt="Docker">
+                        <img class="client-logo" src="/img/logos/upwork-logo-e.svg" alt="Upwork">
+                        <img class="client-logo" src="/img/logos/wordpress-logo-e.svg" alt="WordPress">
+                        <img class="client-logo" src="/img/logos/sendgrid-logo-e.svg" alt="SendGrid">
+                        <img class="client-logo" src="/img/logos/philips-logo-e.svg" alt="Philips">
+                        <img class="client-logo" src="/img/logos/woocommerce-logo-e.svg" alt="Woocommerce">
+                        <img class="client-logo" src="/img/logos/docker-logo-e.svg" alt="Docker">
                     </div>
                 </div>
             </div>
@@ -176,8 +177,11 @@
             <div class="container-row">
                 <div class="col">
                     <p style="margin-bottom: .5em;">Best Support</p>
-                    <h2><span style="font-size: 2.5rem;" class="feature-text">24/7 Support</span> <br>From eCompany Developers</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus dicta praesentium dolores facere illo nobis dolorum omnis voluptates, distinctio commodi vitae porro quaerat excepturi architecto consequatur sequi minima pariatur voluptatibus!</p>
+                    <h2><span style="font-size: 2.5rem;" class="feature-text">24/7 Support</span> <br>From eCompany
+                        Developers</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus dicta praesentium dolores
+                        facere illo nobis dolorum omnis voluptates, distinctio commodi vitae porro quaerat excepturi
+                        architecto consequatur sequi minima pariatur voluptatibus!</p>
                 </div>
                 <div class="col">
                     <div class="chat">
@@ -185,13 +189,12 @@
                             <p class="message">
                                 Hi Team! My Node.js application returns a 500 error, are you able to help?
                             </p>
-                            <img class="avatar" 
-                                src="https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Carlos+Juan" 
+                            <img class="avatar"
+                                src="https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Carlos+Juan"
                                 alt="Custommer Avatar">
                         </div>
                         <div id="chatSupport" class="message-box">
-                            <img class="avatar" 
-                                src="https://ui-avatars.com/api/?background=e6cf00&color=222&name=e" 
+                            <img class="avatar" src="https://ui-avatars.com/api/?background=e6cf00&color=222&name=e"
                                 alt="Develoer Avatar">
                             <p class="message">
                                 👋 Hi there! Let me take a quick look for you, wait a minute.
@@ -199,20 +202,20 @@
                             <span class="job">eCompany Developer</span>
                         </div>
                         <div id="chatSupport" class="message-box">
-                            <img class="avatar" 
-                                src="https://ui-avatars.com/api/?background=e6cf00&color=222&name=e" 
+                            <img class="avatar" src="https://ui-avatars.com/api/?background=e6cf00&color=222&name=e"
                                 alt="Develoer Avatar">
                             <p class="message">
-                                Thank you for your patience, reviewing your logs I'm able to see an error related to the index.js file
+                                Thank you for your patience, reviewing your logs I'm able to see an error related to the
+                                index.js file
                             </p>
                             <span class="job">eCompany Developer</span>
                         </div>
                         <div id="chatSupport" class="message-box">
-                            <img class="avatar" 
-                                src="https://ui-avatars.com/api/?background=e6cf00&color=222&name=e" 
+                            <img class="avatar" src="https://ui-avatars.com/api/?background=e6cf00&color=222&name=e"
                                 alt="Develoer Avatar">
                             <p class="message">
-                                The API_KEY Environment Variable is not currently set which may be required by your application
+                                The API_KEY Environment Variable is not currently set which may be required by your
+                                application
                             </p>
                             <span class="job">eCompany Developer</span>
                         </div>
@@ -220,8 +223,8 @@
                             <p class="message">
                                 Thanks, you were right - adding that worked great and fixed the error.
                             </p>
-                            <img class="avatar" 
-                                src="https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Carlos+Juan" 
+                            <img class="avatar"
+                                src="https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Carlos+Juan"
                                 alt="Custommer Avatar">
                         </div>
                     </div>
@@ -304,7 +307,7 @@
         <section id="faq">
             <div class="container-row">
                 <div class="title-container">
-                    <h2>Frequently asked questions</h2>
+                    <h2><span class="feature-text">Frequently</span> asked questions</h2>
                     <p>We're here to help with any questions you have about plans, pricing, and supported features.</p>
                 </div>
                 <div class="column-grid">
@@ -313,76 +316,173 @@
                         <li class="faq-item">
                             <a class="acordion-item" href="#">
                                 <h4 class="acordion-question">On how many sites can I activate the plugin?</h4>
-                                <div class="acordion-icon">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M15.68 7.11603L9.67999 12.116L10.32 12.884L16.32 7.88403L15.68 7.11603Z" fill="#F5F5F5"/>
-                                        <path d="M16.32 7.88402L10.32 12.884C9.80799 13.311 9.16799 12.543 9.67999 12.116L15.68 7.11603C16.192 6.68903 16.832 7.45702 16.32 7.88402Z" fill="#F5F5F5"/>
-                                        <path d="M3.67999 7.88403L9.67999 12.884L10.32 12.116L4.31999 7.11603L3.67999 7.88403Z" fill="#F5F5F5"/>
-                                        <path d="M4.31999 7.11603L10.32 12.116C10.832 12.543 10.192 13.311 9.67999 12.884L3.67999 7.88402C3.16799 7.45702 3.80799 6.68903 4.31999 7.11603Z" fill="#F5F5F5"/>
-                                        </svg>
-                                                                       
-                                </div>
+                                <div class="acordion-icon"></div>
                             </a>
                             <p class="acordion-content">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus praesentium ullam corporis consectetur nostrum, cumque hic ex! Porro obcaecati asperiores illo saepe voluptas dicta expedita et, adipisci explicabo voluptates!
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus praesentium
+                                ullam corporis consectetur nostrum, cumque hic ex! Porro obcaecati asperiores illo saepe
+                                voluptas dicta expedita et, adipisci explicabo voluptates!
                             </p>
                         </li>
                         <li class="faq-item">
-                            <a class="acordion-trigger" href="#">Is the plugin compatible with previous versions of WordPress?</a>
+                            <a class="acordion-item" href="#">
+                                <h4 class="acordion-question">Is the plugin compatible with previous versions of
+                                    WordPress?</h4>
+                                <div class="acordion-icon"></div>
+                            </a>
                             <p class="acordion-content">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus praesentium ullam corporis consectetur nostrum, cumque hic ex! Porro obcaecati asperiores illo saepe voluptas dicta expedita et, adipisci explicabo voluptates!
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus praesentium
+                                ullam corporis consectetur nostrum, cumque hic ex! Porro obcaecati asperiores illo saepe
+                                voluptas dicta expedita et, adipisci explicabo voluptates!
                             </p>
                         </li>
                         <li class="faq-item">
-                            <a class="acordion-trigger" href="#">Can I use the plugin on test websites or local sites?</a>
+                            <a class="acordion-item" href="#">
+                                <h4 class="acordion-question">Can I use the plugin on test websites or local sites?</h4>
+                                <div class="acordion-icon"></div>
+                            </a>
                             <p class="acordion-content">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus praesentium ullam corporis consectetur nostrum, cumque hic ex! Porro obcaecati asperiores illo saepe voluptas dicta expedita et, adipisci explicabo voluptates!
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus praesentium
+                                ullam corporis consectetur nostrum, cumque hic ex! Porro obcaecati asperiores illo saepe
+                                voluptas dicta expedita et, adipisci explicabo voluptates!
                             </p>
                         </li>
                         <li class="faq-item">
-                            <a class="acordion-trigger" href="#">Does the plugin import and export all content, including images and media files?</a>
+                            <a class="acordion-item" href="#">
+                                <h4 class="acordion-question">Does the plugin export all content, including images and
+                                    media files?</h4>
+                                <div class="acordion-icon"></div>
+                            </a>
                             <p class="acordion-content">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus praesentium ullam corporis consectetur nostrum, cumque hic ex! Porro obcaecati asperiores illo saepe voluptas dicta expedita et, adipisci explicabo voluptates!
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus praesentium
+                                ullam corporis consectetur nostrum, cumque hic ex! Porro obcaecati asperiores illo saepe
+                                voluptas dicta expedita et, adipisci explicabo voluptates!
                             </p>
                         </li>
                     </ul>
                     <h3 class="category-faq">Plugin Capabilities:</h3>
                     <ul class="faq-container">
                         <li class="faq-item">
-                            <a class="acordion-trigger" href="#">Can I use the plugin on test websites or local sites?</a>
+                            <a class="acordion-item" href="#">
+                                <h4 class="acordion-question">On how many sites can I activate the plugin?</h4>
+                                <div class="acordion-icon"></div>
+                            </a>
                             <p class="acordion-content">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus praesentium ullam corporis consectetur nostrum, cumque hic ex! Porro obcaecati asperiores illo saepe voluptas dicta expedita et, adipisci explicabo voluptates!
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus praesentium
+                                ullam corporis consectetur nostrum, cumque hic ex! Porro obcaecati asperiores illo saepe
+                                voluptas dicta expedita et, adipisci explicabo voluptates!
                             </p>
                         </li>
                         <li class="faq-item">
-                            <a class="acordion-trigger" href="#">Does the plugin import and export all content, including images and media files?</a>
+                            <a class="acordion-item" href="#">
+                                <h4 class="acordion-question">Is the plugin compatible with previous versions of
+                                    WordPress?</h4>
+                                <div class="acordion-icon"></div>
+                            </a>
                             <p class="acordion-content">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus praesentium ullam corporis consectetur nostrum, cumque hic ex! Porro obcaecati asperiores illo saepe voluptas dicta expedita et, adipisci explicabo voluptates!
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus praesentium
+                                ullam corporis consectetur nostrum, cumque hic ex! Porro obcaecati asperiores illo saepe
+                                voluptas dicta expedita et, adipisci explicabo voluptates!
                             </p>
                         </li>
                         <li class="faq-item">
-                            <a class="acordion-trigger" href="#">What types of websites can I import and export with the plugin?</a>
+                            <a class="acordion-item" href="#">
+                                <h4 class="acordion-question">Can I use the plugin on test websites or local sites?</h4>
+                                <div class="acordion-icon"></div>
+                            </a>
                             <p class="acordion-content">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus praesentium ullam corporis consectetur nostrum, cumque hic ex! Porro obcaecati asperiores illo saepe voluptas dicta expedita et, adipisci explicabo voluptates!
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus praesentium
+                                ullam corporis consectetur nostrum, cumque hic ex! Porro obcaecati asperiores illo saepe
+                                voluptas dicta expedita et, adipisci explicabo voluptates!
                             </p>
                         </li>
                         <li class="faq-item">
-                            <a class="acordion-trigger" href="#">Does the plugin retain the structure and design of my website during the import and export process?</a>
+                            <a class="acordion-item" href="#">
+                                <h4 class="acordion-question">Does the plugin export all content, including images and
+                                    media files?</h4>
+                                <div class="acordion-icon"></div>
+                            </a>
                             <p class="acordion-content">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus praesentium ullam corporis consectetur nostrum, cumque hic ex! Porro obcaecati asperiores illo saepe voluptas dicta expedita et, adipisci explicabo voluptates!
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus praesentium
+                                ullam corporis consectetur nostrum, cumque hic ex! Porro obcaecati asperiores illo saepe
+                                voluptas dicta expedita et, adipisci explicabo voluptates!
                             </p>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
+        <section id="ctaFooter">
+            <div class="container-row">
+                <div class="col">
+                    <h2><span class="feature-text">Get started</span> for free</h2>
+                    <p>Try eCompany plugin for as long as you like with our free Starter plan. Purchase a paid Site plan
+                        to get a priority support and unlock additional features.</p>
+                    <a aria-label="Register button" class="btn btn-primary" href="#">Get started — it's free</a>
+                </div>
+                <div class="col">
+                    <div class="clients">
+                        <div class="grid-img">
+                            <img class="client-logo" src="/img/logos/upwork-logo-e.svg" alt="Upwork">
+                            <img class="client-logo" src="/img/logos/wordpress-logo-e.svg" alt="WordPress">
+                            <img class="client-logo" src="/img/logos/sendgrid-logo-e.svg" alt="SendGrid">
+                            <img class="client-logo" src="/img/logos/philips-logo-e.svg" alt="Philips">
+                            <img class="client-logo" src="/img/logos/woocommerce-logo-e.svg" alt="Woocommerce">
+                            <img class="client-logo" src="/img/logos/cloudflare-logo-e.svg" alt="Cloudflare">
+                            <img class="client-logo" src="/img/logos/dell-logo-e.svg" alt="Dell">
+                            <img class="client-logo" src="/img/logos/docker-logo-e.svg" alt="Docker">
+                            <img class="client-logo" src="/img/logos/monday-logo-e.svg" alt="Monday">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>Un sitio web desarrollado para conseguir la certificación en "Diseño Web Responsivo" <br>otorgada por <a
-                href="http://freecodecamp.org/" target="_blank"
-                rel="noopener noreferrer">freeCodeCamp.org</a><br><br>Por <a href="http://michaelbarrera.ga/"
-                target="_blank" rel="noopener noreferrer">Michael Barrera</a>
-        </p>
+        <section id="gFooter">
+            <div class="container-grid">
+                <div class="col">
+                    <img class="footer-logo" src="/logo.svg" alt="eCompany Logo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="row">
+                    <div class="links-column">
+                        <p>Product</p>
+                        <ul class="links">
+                            <li><a title="About" href="#About">About</a></li>
+                            <li><a title="Features of plugin" href="#Features">Features</a></li>
+                            <li><a title="About support" href="#Support">Support</a></li>
+                            <li><a title="Pricing" href="#Pricing">Pricing</a></li>
+                            <li><a title="Frequently asked questions" href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-column">
+                        <p>Company</p>
+                        <ul class="links">
+                            <li><a title="Privacy Policy" href="#">Privacy Policy</a></li>
+                            <li><a title="Terms of Service" href="#">Terms of Service</a></li>
+                            <li><a title="Cookie Policy" href="#">Cookie Policy</a></li>
+                            <li><a title="Accessibility statement" href="#">Accessibility statement</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-column">
+                        <p>Social</p>
+                        <ul class="links">
+                            <li><a title="Linkedin profile" href="#">Linkedin</a></li>
+                            <li><a title="Twitter account" href="#">Twitter</a></li>
+                            <li><a title="Instagram account" href="#">Instagram</a></li>
+                            <li><a title="YouTube Channel" href="#">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="credits">
+            <div class="container-row">
+                <p>By <a title="Site of developer" href="http://michaelbarrera.dev/" target="_blank" rel="noopener noreferrer">Michael Barrera.</a></p>
+                <p>A website developed to achieve the certification in "Responsive Web Design" granted by <a title="freeCodeCamp website" href="http://freecodecamp.org/" target="_blank" rel="noopener noreferrer">freeCodeCamp.org</a></p>
+            </div>
+        </section>
         <script src="/js/fakeChat.js"></script>
     </footer>
 </body>
