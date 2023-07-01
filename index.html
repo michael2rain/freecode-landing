@@ -16,15 +16,15 @@
         <div class="container">
             <div class="brand">
                 <a title="Landing Page - freeCodeCamp" href="#">
-                    <img class="elogo" src="/logo.svg" alt="Logo Company">
+                    <img id="header-img" class="elogo" src="/logo.svg" alt="Logo Company">
                 </a>
             </div>
-            <nav class="nav-container">
+            <nav id="nav-bar" class="nav-container">
                 <ul id="navLinks" class="nav-links">
-                    <li><a title="Pricing" href="#features">Features</a></li>
-                    <li><a title="Support" href="#support">Support</a></li>
-                    <li><a title="Information" href="#price">Pricing</a></li>
-                    <li><a title="FAQ" href="#faq">FAQ</a></li>
+                    <li><a class="nav-link" title="Pricing" href="#features">Features</a></li>
+                    <li><a class="nav-link" title="Support" href="#support">Support</a></li>
+                    <li><a class="nav-link" title="Information" href="#price">Pricing</a></li>
+                    <li><a class="nav-link" title="FAQ" href="#faq">FAQ</a></li>
                 </ul>
                 <button onclick="openModal()" class="btn nav-button">Contact sales</button>
                 <button id="menuButton" class="hamburguer">
@@ -144,6 +144,7 @@
                 <div class="col">
                     <div class="container-video">
                         <iframe
+                            id="video"
                             src="https://www.youtube-nocookie.com/embed/VBiOfnN68-0?controls=0"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -424,7 +425,7 @@
                         <button onclick="closeModal()" class="close-btn"></button>
                     </div>
                     <div class="modal-form">
-                        <form id="registerForm" action="https://www.freecodecamp.com/email-submit">
+                        <form id="form" action="https://www.freecodecamp.com/email-submit">
                             <div class="input">
                                 <label for="name">Name:</label>
                                 <input type="text" name="name" id="name" placeholder="Enter your full name">
@@ -433,7 +434,7 @@
                                 <label for="email">E-mail:</label>
                                 <input type="email" name="email" id="email" placeholder="my@mail.com">
                             </div>
-                            <input class="btn btn-primary" type="submit" value="Sign up">
+                            <input id="submit" class="btn btn-primary" type="submit" value="Sign up">
                         </form>
                     </div>
                 </div>
