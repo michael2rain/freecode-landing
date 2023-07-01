@@ -26,7 +26,7 @@
                     <li><a title="Information" href="#price">Pricing</a></li>
                     <li><a title="FAQ" href="#faq">FAQ</a></li>
                 </ul>
-                <a onclick="openModal()" class="btn nav-button" href="#">Contact sales</a>
+                <button onclick="openModal()" class="btn nav-button">Contact sales</button>
                 <button id="menuButton" class="hamburguer">
                     <svg width="40" height="40" viewBox="0 0 100 100">
                         <path class="line line1"
@@ -48,8 +48,8 @@
                     <p>Hendrerit non urna mattis consectetur gravida auctor consequat. Magna
                         semper est sagittis integer.</p>
                     <div class="btn-container">
-                        <a href="#price" class="btn btn-primary">Download Plugin</a>
-                        <a href="#price" class="btn btn-secondary">Watch in action</a>
+                        <button onclick="openModal()" class="btn btn-primary">Download Plugin</button>
+                        <a href="#features" class="btn btn-secondary">Watch in action</a>
                     </div>
                 </div>
                 <div class="col">
@@ -233,7 +233,7 @@
                             </ul>
                         </div>
                         <div class="footer-card">
-                            <a class="btn btn-secondary" href="#" title="Start for free">Star for free</a>
+                            <button onclick="openModal()" class="btn btn-secondary">Star for free</button>
                         </div>
                     </li>
                     <!-- Recomended plan -->
@@ -254,7 +254,7 @@
                             </ul>
                         </div>
                         <div class="footer-card">
-                            <a class="btn btn-primary" href="#" title="Select this plan">Select this plan</a>
+                            <button onclick="openModal()" class="btn btn-primary">Select this plan</button>
                         </div>
                     </li>
                     <!-- Enterprise plan -->
@@ -276,7 +276,7 @@
                             </ul>
                         </div>
                         <div class="footer-card">
-                            <a class="btn btn-secondary" href="#" title="Select this plan">Select this plan</a>
+                            <button onclick="openModal()" class="btn btn-secondary">Select this plan</button>
                         </div>
                     </li>
                 </ul>
@@ -396,7 +396,7 @@
                     <h2><span class="feature-text">Get started</span> for free</h2>
                     <p>Try eCompany plugin for as long as you like with our free Starter plan. Purchase a paid Site plan
                         to get a priority support and unlock additional features.</p>
-                    <a aria-label="Register button" class="btn btn-primary" href="#">Get started — it's free</a>
+                    <a aria-label="Register button" class="btn btn-primary" href="#price">Get started — it's free</a>
                 </div>
                 <div class="col">
                     <div class="clients">
@@ -424,7 +424,7 @@
                         <button onclick="closeModal()" class="close-btn"></button>
                     </div>
                     <div class="modal-form">
-                        <form id="registerForm" action="POST">
+                        <form id="registerForm" action="https://www.freecodecamp.com/email-submit">
                             <div class="input">
                                 <label for="name">Name:</label>
                                 <input type="text" name="name" id="name" placeholder="Enter your full name">
@@ -433,7 +433,7 @@
                                 <label for="email">E-mail:</label>
                                 <input type="email" name="email" id="email" placeholder="my@mail.com">
                             </div>
-                            <input class="btn btn-primary" type="button" value="Sign up">
+                            <input class="btn btn-primary" type="submit" value="Sign up">
                         </form>
                     </div>
                 </div>
@@ -452,10 +452,10 @@
                     <div class="links-column">
                         <p>Product</p>
                         <ul class="links">
-                            <li><a title="About" href="#About">About</a></li>
-                            <li><a title="Features of plugin" href="#Features">Features</a></li>
-                            <li><a title="About support" href="#Support">Support</a></li>
-                            <li><a title="Pricing" href="#Pricing">Pricing</a></li>
+                            <li><a title="About" href="#hero">About</a></li>
+                            <li><a title="Features of plugin" href="#features">Features</a></li>
+                            <li><a title="About support" href="#support">Support</a></li>
+                            <li><a title="Pricing" href="#price">Pricing</a></li>
                             <li><a title="Frequently asked questions" href="#faq">FAQ</a></li>
                         </ul>
                     </div>

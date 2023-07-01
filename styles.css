@@ -119,6 +119,7 @@ a {
 }
 
 button {
+    font-family: 'Lexend', sans-serif;
     border: none;
     cursor: pointer;
 }
@@ -1088,7 +1089,7 @@ input[type="email"]:hover {
     display: flex;
 }
 
-.footer-card a {
+.footer-card button {
     width: 100%;
     text-align: center;
 }
@@ -1333,6 +1334,10 @@ input[type="email"]:hover {
     outline: none;
     border-radius: calc(var(--border-radius) / 2);
     box-shadow: 0px 0px 0px 3px rgb(230 207 0 / 40%);
+    -webkit-border-radius: calc(var(--border-radius) / 2);
+    -moz-border-radius: calc(var(--border-radius) / 2);
+    -ms-border-radius: calc(var(--border-radius) / 2);
+    -o-border-radius: calc(var(--border-radius) / 2);
 }
 
 .modal-dialog {
