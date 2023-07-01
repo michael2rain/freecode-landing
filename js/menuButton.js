@@ -1,9 +1,8 @@
-window.addEventListener('DOMContentLoaded', () => {
-
+export function menuButton() {
     const hammy = document.getElementById("menuButton");
     let firstClick = true;
-    
-    hammy.onclick = function() {
+
+    hammy.onclick = function () {
         if (firstClick) {
             // Primer click
             const navLinks = document.getElementById("navLinks");
@@ -18,5 +17,4 @@ window.addEventListener('DOMContentLoaded', () => {
             firstClick = true;
         }
     }
-    
-});
+}
