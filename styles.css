@@ -148,6 +148,12 @@ code {
 
 /*Form Styles*/
 
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 input[type="text"],
 input[type="email"] {
     background-color: var(--color-light);
@@ -472,6 +478,7 @@ input[type="email"]:hover {
         -o-transform: scale(.9);
     }
     .nav-links {
+        display: none;
         flex-direction: column;
         position: fixed;
         top: 74px;
@@ -515,6 +522,7 @@ input[type="email"]:hover {
         font-weight: 500;
     }
     .active {
+        display: flex;
         opacity: 1;
         transform: translate(0, 0) scale(1);
         -webkit-transform: translate(0, 0) scale(1);
@@ -1373,6 +1381,16 @@ input[type="email"]:hover {
 
 .modal-form #submit {
     margin-top: .75em;
+}
+
+/*
+ * Small Devices: Tablets
+*/
+
+@media (max-width: 992px) {
+    .container-modal {
+        top: 6vh;
+    }
 }
 
 
